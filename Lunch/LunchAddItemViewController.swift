@@ -36,7 +36,7 @@ class LunchAddItemViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        self.title = "Add Item"
+        self.title = "Add Ingredients"
     }
     
     override func didReceiveMemoryWarning() {
