@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="qzw-DM-3wD">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scroll" translatesAutoresizingMaskIntoConstraints="NO" id="hIJ-Rf-aqc">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="6iu-kP-rzS"/>
+                        <constraint firstAttribute="height" constant="120" id="SdE-Qv-RDA"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="6iu-kP-rzS"/>
+                            <exclude reference="SdE-Qv-RDA"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="6iu-kP-rzS"/>
+                            <include reference="SdE-Qv-RDA"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="qzw-DM-3wD" secondAttribute="bottom" id="2hi-py-U0n"/>
+                <constraint firstAttribute="trailing" secondItem="qzw-DM-3wD" secondAttribute="trailing" id="40A-Md-l4n"/>
+                <constraint firstItem="qzw-DM-3wD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BIy-1E-DI1"/>
+                <constraint firstItem="hIJ-Rf-aqc" firstAttribute="centerX" secondItem="qzw-DM-3wD" secondAttribute="centerX" id="GGT-Ns-bWJ"/>
+                <constraint firstItem="qzw-DM-3wD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="I2x-tv-IS1"/>
+                <constraint firstItem="qzw-DM-3wD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Zdk-Gp-4OB"/>
+                <constraint firstItem="hIJ-Rf-aqc" firstAttribute="centerY" secondItem="qzw-DM-3wD" secondAttribute="centerY" id="cWn-ug-tKu"/>
+                <constraint firstAttribute="bottom" secondItem="qzw-DM-3wD" secondAttribute="bottom" id="jx8-dR-0vt"/>
+                <constraint firstItem="qzw-DM-3wD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="m68-GT-ZAd"/>
+                <constraint firstItem="hIJ-Rf-aqc" firstAttribute="centerX" secondItem="qzw-DM-3wD" secondAttribute="centerX" id="saq-0U-B1f"/>
+                <constraint firstAttribute="trailing" secondItem="qzw-DM-3wD" secondAttribute="trailing" id="vq2-XX-rcD"/>
+                <constraint firstItem="hIJ-Rf-aqc" firstAttribute="centerY" secondItem="qzw-DM-3wD" secondAttribute="centerY" id="zb9-5h-BSM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="qzw-DM-3wD"/>
+                    <exclude reference="hIJ-Rf-aqc"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="2hi-py-U0n"/>
+                    <exclude reference="40A-Md-l4n"/>
+                    <exclude reference="BIy-1E-DI1"/>
+                    <exclude reference="I2x-tv-IS1"/>
+                    <exclude reference="Zdk-Gp-4OB"/>
+                    <exclude reference="jx8-dR-0vt"/>
+                    <exclude reference="m68-GT-ZAd"/>
+                    <exclude reference="vq2-XX-rcD"/>
+                    <exclude reference="GGT-Ns-bWJ"/>
+                    <exclude reference="cWn-ug-tKu"/>
+                    <exclude reference="saq-0U-B1f"/>
+                    <exclude reference="zb9-5h-BSM"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="qzw-DM-3wD"/>
+                    <include reference="hIJ-Rf-aqc"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="2hi-py-U0n"/>
+                    <exclude reference="40A-Md-l4n"/>
+                    <exclude reference="BIy-1E-DI1"/>
+                    <exclude reference="I2x-tv-IS1"/>
+                    <include reference="Zdk-Gp-4OB"/>
+                    <exclude reference="jx8-dR-0vt"/>
+                    <include reference="m68-GT-ZAd"/>
+                    <include reference="vq2-XX-rcD"/>
+                    <exclude reference="GGT-Ns-bWJ"/>
+                    <include reference="cWn-ug-tKu"/>
+                    <include reference="saq-0U-B1f"/>
+                    <exclude reference="zb9-5h-BSM"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="423" y="444"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="1536" height="2048"/>
+        <image name="scroll" width="504" height="592"/>
+    </resources>
+</document>
